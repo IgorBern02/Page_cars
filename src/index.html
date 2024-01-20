@@ -402,219 +402,261 @@
     </header>
 
     <main >
-        
  <!-- CAROUSEL -->
+    
+<div id="controls-carousel" class="hidden lg:block md:hidden relative w-full lg:h-[32rem]" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative lg:h-full overflow-hidden rounded-lg ">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/img/pexels-roman-pohorecki-2664399.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out lg:h-full" data-carousel-item="active">
+            <img src="/img/pexels-trace-constant-707046.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/img/Porsche-911-Carrera-7.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out " data-carousel-item>
+            <img src="/img/lamborghini.jpg" class="absolute block w-full bg-top -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/img/golfgti.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
 
 <!-- CARDS -->
-<div class="grid grid-rows-1 grid-cols-1 p-9 gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid grid-rows-1 grid-cols-1 p-9 gap-10 md:grid-cols-2 lg:grid-cols-3">
 
-<!-- FERRARI -->
-<div
-class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-<div
-  class="relative overflow-hidden bg-cover bg-no-repeat"
-  data-te-ripple-init
-  data-te-ripple-color="light">
-  <img
-    class="rounded-t-lg"
-    src="/img/pexels-roman-pohorecki-2664399.jpg"
-    alt="" />
-  <a href="#!">
-    <div
-      class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-  </a>
-</div>
-<div class="p-6">
-  <h5
-    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-    Ferrari
-  </h5>
-  <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-    A Ferrari é uma marca italiana de carros esportivos de luxo, conhecida por seu design elegante e desempenho excepcional nas pistas. Com sua herança de velocidade e estilo, a Ferrari é um ícone do automobilismo mundial.
-  </p>
-  <button
-    type="button"
-    class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-    data-te-ripple-init
-    data-te-ripple-color="light">
-    Comprar
-  </button>
-</div>
-</div>
+            <!-- FERRARI -->
+            <div
+            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+                class="rounded-t-lg"
+                src="/img/pexels-roman-pohorecki-2664399.jpg"
+                alt="" />
+            <a href="#!">
+                <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+            </div>
+            <div class="p-6">
+            <h5
+                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Ferrari
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                A Ferrari é uma marca italiana de carros esportivos de luxo, conhecida por seu design elegante e desempenho excepcional nas pistas. Com sua herança de velocidade e estilo, a Ferrari é um ícone do automobilismo mundial.
+            </p>
+            <button
+                type="button"
+                class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                Comprar
+            </button>
+            </div>
+            </div>
 
-<!-- HILUX -->
-<div
-class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-<div
-  class="relative overflow-hidden bg-cover bg-no-repeat"
-  data-te-ripple-init
-  data-te-ripple-color="light">
-  <img
-    class="rounded-t-lg"
-    src="/img/hilux.webp"
-    alt="" />
-  <a href="#!">
-    <div
-      class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-  </a>
-</div>
-<div class="p-6">
-  <h5
-    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-    Hilux
-  </h5>
-  <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-    A Toyota Hilux é uma picape robusta e confiável, conhecida por sua durabilidade e capacidade off-road. Com um histórico de desempenho sólido, a Hilux é uma escolha popular para trabalho e aventuras.
-  </p>
-  <button
-    type="button"
-    class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 mt-6 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-    data-te-ripple-init
-    data-te-ripple-color="light">
-    Comprar
-  </button>
-</div>
-</div>
+            <!-- HILUX -->
+            <div
+            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+                class="rounded-t-lg"
+                src="/img/hilux.webp"
+                alt="" />
+            <a href="#!">
+                <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+            </div>
+            <div class="p-6">
+            <h5
+                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Hilux
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                A Toyota Hilux é uma picape robusta e confiável, conhecida por sua durabilidade e capacidade off-road. Com um histórico de desempenho sólido, a Hilux é uma escolha popular para trabalho e aventuras.
+            </p>
+            <button
+                type="button"
+                class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 lg:mt-6 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                Comprar
+            </button>
+            </div>
+            </div>
 
-<!-- BMW -->
-<div
-class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-<div
-  class="relative overflow-hidden bg-cover bg-no-repeat"
-  data-te-ripple-init
-  data-te-ripple-color="light">
-  <img
-    class="rounded-t-lg"
-    src="/img/pexels-trace-constant-707046.jpg"
-    alt="" />
-  <a href="#!">
-    <div
-      class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-  </a>
-</div>
-<div class="p-6">
-  <h5
-    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-    BMW
-  </h5>
-  <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-    A BMW é uma marca de carros de luxo conhecida por seu design elegante e desempenho esportivo. Com uma história de inovação e qualidade, os veículos da BMW são símbolos de status e sofisticação.
-  </p>
-  <button
-    type="button"
-    class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 lg:mt-6 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-    data-te-ripple-init
-    data-te-ripple-color="light">
-    Comprar
-  </button>
-</div>
-</div>
+            <!-- BMW -->
+            <div
+            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+                class="rounded-t-lg"
+                src="/img/pexels-trace-constant-707046.jpg"
+                alt="" />
+            <a href="#!">
+                <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+            </div>
+            <div class="p-6">
+            <h5
+                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                BMW
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                A BMW é uma marca de carros de luxo conhecida por seu design elegante e desempenho esportivo. Com uma história de inovação e qualidade, os veículos da BMW são símbolos de status e sofisticação.
+            </p>
+            <button
+                type="button"
+                class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 lg:mt-6 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                Comprar
+            </button>
+            </div>
+            </div>
 
-<!-- ONIX -->
-<div
-class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-<div
-  class="relative overflow-hidden bg-cover bg-no-repeat"
-  data-te-ripple-init
-  data-te-ripple-color="light">
-  <img
-    class="rounded-t-lg"
-    src="/img/onix.webp"
-    alt="" />
-  <a href="#!">
-    <div
-      class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-  </a>
-</div>
-<div class="p-6">
-  <h5
-    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-    Onix
-  </h5>
-  <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-    O Chevrolet Onix é um carro compacto popular, conhecido por seu design moderno e economia de combustível. Com tecnologia avançada e bom custo-benefício, o Onix é uma escolha comum para motoristas urbanos.
-  </p>
-  <button
-    type="button"
-    class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-    data-te-ripple-init
-    data-te-ripple-color="light">
-    Comprar
-  </button>
-</div>
-</div>
+            <!-- ONIX -->
+            <div
+            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+                class="rounded-t-lg"
+                src="/img/onix.webp"
+                alt="" />
+            <a href="#!">
+                <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+            </div>
+            <div class="p-6">
+            <h5
+                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Onix
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                O Chevrolet Onix é um carro compacto popular, conhecido por seu design moderno e economia de combustível. Com tecnologia avançada e bom custo-benefício, o Onix é uma escolha comum para motoristas urbanos.
+            </p>
+            <button
+                type="button"
+                class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                Comprar
+            </button>
+            </div>
+            </div>
 
-<!-- GOLF GTI -->
-<div
-class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-<div
-  class="relative overflow-hidden bg-cover bg-no-repeat"
-  data-te-ripple-init
-  data-te-ripple-color="light">
-  <img
-    class="rounded-t-lg"
-    src="/img/golfgti.jpg"
-    alt="" />
-  <a href="#!">
-    <div
-      class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-  </a>
-</div>
-<div class="p-6">
-  <h5
-    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-    Golf GTI
-  </h5>
-  <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-    O Golf GTI é um hatchback esportivo icônico, famoso por seu desempenho ágil e dirigibilidade precisa. Combinando potência e praticidade, o Golf GTI é um favorito entre entusiastas de carros esportivos.
-  </p>
-  <button
-    type="button"
-    class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 lg:mt-14 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-    data-te-ripple-init
-    data-te-ripple-color="light">
-    Comprar
-  </button>
-</div>
-</div>
+            <!-- GOLF GTI -->
+            <div
+            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+                class="rounded-t-lg"
+                src="/img/golfgti.jpg"
+                alt="" />
+            <a href="#!">
+                <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+            </div>
+            <div class="p-6">
+            <h5
+                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Golf GTI
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                O Golf GTI é um hatchback esportivo icônico, famoso por seu desempenho ágil e dirigibilidade precisa. Combinando potência e praticidade, o Golf GTI é um favorito entre entusiastas de carros esportivos.
+            </p>
+            <button
+                type="button"
+                class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 lg:mt-8 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                Comprar
+            </button>
+            </div>
+            </div>
 
-<!-- CIVIC -->
-<div
-class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-<div
-  class="relative overflow-hidden bg-cover bg-no-repeat"
-  data-te-ripple-init
-  data-te-ripple-color="light">
-  <img
-    class="rounded-t-lg"
-    src="/img/civic.jpg"
-    alt="" />
-  <a href="#!">
-    <div
-      class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-  </a>
-</div>
-<div class="p-6">
-  <h5
-    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-    Civic
-  </h5>
-  <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-    O Honda Civic é um sedan compacto conhecido por sua confiabilidade e eficiência. Com um design moderno e tecnologia avançada, o Civic é uma escolha popular para quem busca um carro prático e econômico.
-  </p>
-  <button
-    type="button"
-    class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 lg:mt-8 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-    data-te-ripple-init
-    data-te-ripple-color="light">
-    Comprar
-  </button>
-</div>
-</div>
-</div>
+            <!-- CIVIC -->
+            <div
+            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+                class="rounded-t-lg"
+                src="/img/civic.jpg"
+                alt="" />
+            <a href="#!">
+                <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+            </a>
+            </div>
+            <div class="p-6">
+            <h5
+                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Civic
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                O Honda Civic é um sedan compacto conhecido por sua confiabilidade e eficiência. Com um design moderno e tecnologia avançada, o Civic é uma escolha popular para quem busca um carro prático e econômico.
+            </p>
+            <button
+                type="button"
+                class="w-full inline-block rounded bg-primary px-6 pb-2 pt-2.5 lg:mt-8 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                Comprar
+            </button>
+            </div>
+            </div>
+        </div>
     </main>
   </body>
-  <script src="/public/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="/public/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </html>
