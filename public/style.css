@@ -550,6 +550,10 @@ video {
   visibility: visible !important;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -590,6 +594,10 @@ video {
   z-index: 1;
 }
 
+.z-\[2\]{
+  z-index: 2;
+}
+
 .float-left{
   float: left;
 }
@@ -600,6 +608,16 @@ video {
 
 .\!-m-px{
   margin: -1px !important;
+}
+
+.mx-\[15\%\]{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.mx-\[3px\]{
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .ml-auto{
@@ -622,8 +640,20 @@ video {
   margin-right: -100%;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .box-border{
   box-sizing: border-box;
+}
+
+.box-content{
+  box-sizing: content-box;
 }
 
 .block{
@@ -678,6 +708,50 @@ video {
   height: 2rem;
 }
 
+.h-3\/6{
+  height: 50%;
+}
+
+.h-1\/4{
+  height: 25%;
+}
+
+.h-60{
+  height: 15rem;
+}
+
+.h-52{
+  height: 13rem;
+}
+
+.h-64{
+  height: 16rem;
+}
+
+.h-4\/6{
+  height: 66.666667%;
+}
+
+.h-2\/6{
+  height: 33.333333%;
+}
+
+.h-96{
+  height: 24rem;
+}
+
+.h-2\/4{
+  height: 50%;
+}
+
+.h-4\/5{
+  height: 80%;
+}
+
+.h-\[3px\]{
+  height: 3px;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -722,9 +796,17 @@ video {
   width: 15%;
 }
 
+.w-\[30px\]{
+  width: 30px;
+}
+
 .min-w-max{
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.flex-initial{
+  flex: 0 1 auto;
 }
 
 .-translate-x-full{
@@ -836,8 +918,21 @@ video {
   border-width: 0px;
 }
 
+.border-y-\[10px\]{
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+}
+
+.border-solid{
+  border-style: solid;
+}
+
 .border-none{
   border-style: none;
+}
+
+.border-transparent{
+  border-color: transparent;
 }
 
 .bg-transparent{
@@ -953,6 +1048,16 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pl-\[3\.4rem\]{
   padding-left: 3.4rem;
 }
@@ -979,6 +1084,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.-indent-\[999px\]{
+  text-indent: -999px;
 }
 
 .font-mono{
@@ -1360,6 +1469,38 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .lg\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .lg\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .lg\:mt-12{
+    margin-top: 3rem;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mt-16{
+    margin-top: 4rem;
+  }
+
+  .lg\:mt-14{
+    margin-top: 3.5rem;
+  }
+
+  .lg\:mt-11{
+    margin-top: 2.75rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
