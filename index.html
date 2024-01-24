@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth :target:scroll-mt-4">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vehicles</title>
     <link rel="stylesheet" href="./public/style.css" />
-    <link rel="stylesheet" href="./public/login.html">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
     />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" /> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
-  <body class="min-h-screen w-full bg-white dark:bg-black p-0 m-0 box-border">
+  <body class="min-h-screen w-full bg-white dark:bg-zinc-800 p-0 m-0 box-border">
     <header
       class="w-full h-auto flex items-center justify-between flex-row p-4"
     >
       <!-- SIDENAV  -->
       <nav
         id="sidenav-1"
-        class="lg:hidden absolute left-0 top-0 z-[1035] h-full w-60 -translate-x-full overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800 dark:text-white"
+        class="lg:hidden absolute left-0 top-0 z-[1035] h-full w-14 -translate-x-full overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800 dark:text-white"
         data-te-sidenav-init
         data-te-sidenav-hidden="true"
         data-te-sidenav-position="absolute"
@@ -613,8 +616,20 @@
             </ul>
           </li>       
         </ul>
+        <input type="checkbox" class="opacity-0 absolute" id="chk" />
+                <label
+                  for="chk"
+                  class="bg-black dark:bg-white rounded-full cursor-pointer flex items-center justify-between relative h-6 w-14 p-1 scale-9 ml-5"
+                >
+                  <i class="fas fa-sun text-corSol"></i>
+                  <i class="fas fa-moon text-corLua"></i>
+                  <div
+                    id="ball"
+                    class="bg-white dark:bg-black rounded-full dark:border dark:border-black absolute h-5 w-5 mudarCor"
+                  ></div>
+                </label>
       </nav>
-
+     
       <button
         class="lg:hidden inline-block rounded-full bg-red-600 px-3 py-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
         data-te-sidenav-toggle-ref
@@ -643,7 +658,22 @@
         Bern Motors
       </h1>
 
-      <!-- USER -->
+      <div class="hidden lg:flex">
+      <input type="checkbox" class="opacity-0 absolute" id="chk" />
+                      <label
+                        for="chk"
+                        class="bg-black dark:bg-white rounded-full cursor-pointer flex items-center justify-between relative h-6 w-14 p-1 scale-9 ml-5"
+                      >
+                        <i class="fas fa-sun text-corSol"></i>
+                        <i class="fas fa-moon text-corLua"></i>
+                        <div
+                          id="ball"
+                          class="bg-white dark:bg-black rounded-full dark:border dark:border-black absolute h-5 w-5 mudarCor"
+                        ></div>
+                      </label>
+      </div>
+
+      <!-- USER --> 
       <div
         class="relative"
         data-te-dropdown-ref
@@ -670,7 +700,7 @@
           <li>
             <a
               class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
-              href="#"
+              href="./src/cadastrar.html"
               data-te-dropdown-item-ref
               >Fazer uma conta</a
             >
@@ -678,7 +708,7 @@
           <li>
             <a
               class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
-              href="./public/login.html"
+              href="./src/login.html"
               data-te-dropdown-item-ref
               >Já tenho uma conta</a
             >
@@ -740,7 +770,7 @@
         </div>
 
 <!-- MENU DESKTOP -->
-<nav class="bg-white border-gray-200 dark:bg-gray-900 hidden lg:flex">
+<nav class="bg-white border-gray-200 dark:bg-zinc-800 hidden lg:flex">
     <div class="flex flex-wrap items-center justify-around max-w-screen-xl mx-auto p-4 ">
         <div id="mega-menu" class="items-center justify-between gap-2 hidden w-full md:flex md:w-auto md:order-1">
             <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
@@ -811,7 +841,7 @@
 
             <!-- FERRARI -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -827,10 +857,10 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Ferrari
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
+            <p class="mb-4 text-base text-black dark:text-white">
                 A Ferrari é uma marca italiana de carros esportivos de luxo, conhecida por seu design elegante e desempenho excepcional nas pistas. Com sua herança de velocidade e estilo, a Ferrari é um ícone do automobilismo mundial.
             </p>
             <button
@@ -845,7 +875,7 @@
 
             <!-- HILUX -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -861,15 +891,16 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Hilux
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                A Toyota Hilux é uma picape robusta e confiável, conhecida por sua durabilidade e capacidade off-road. Com um histórico de desempenho sólido, a Hilux é uma escolha popular para trabalho e aventuras.
+            <p class="mb-4 text-base text-black dark:text-white">
+              A Toyota Hilux é uma picape robusta e confiável, conhecida por sua durabilidade e capacidade off-road. Com um histórico de desempenho sólido, a Hilux é uma escolha popular para trabalho e aventuras.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
@@ -878,7 +909,7 @@
 
             <!-- BMW -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -894,15 +925,16 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 BMW
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                A BMW é uma marca de carros de luxo conhecida por seu design elegante e desempenho esportivo. Com uma história de inovação e qualidade, os veículos da BMW são símbolos de status e sofisticação.
+            <p class="mb-4 text-base text-black dark:text-white">
+              A BMW é uma marca de carros de luxo conhecida por seu design elegante e desempenho esportivo. Com uma história de inovação e qualidade, os veículos da BMW são símbolos de status e sofisticação.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
@@ -911,7 +943,7 @@
 
             <!-- ONIX -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -927,15 +959,16 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Onix
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                O Chevrolet Onix é um carro compacto popular, conhecido por seu design moderno e economia de combustível. Com tecnologia avançada e bom custo-benefício, o Onix é uma escolha comum para motoristas urbanos.
+            <p class="mb-4 text-base text-black dark:text-white">
+              O Chevrolet Onix é um carro compacto popular, conhecido por seu design moderno e economia de combustível. Com tecnologia avançada e bom custo-benefício, o Onix é uma escolha comum para motoristas urbanos.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
@@ -944,7 +977,7 @@
 
             <!-- GOLF GTI -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -960,15 +993,16 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight  text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Golf GTI
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                O Golf GTI é um hatchback esportivo icônico, famoso por seu desempenho ágil e dirigibilidade precisa. Combinando potência e praticidade, o Golf GTI é um favorito entre entusiastas de carros esportivos.
+            <p class="mb-4 text-base text-black dark:text-white">
+              O Golf GTI é um hatchback esportivo icônico, famoso por seu desempenho ágil e dirigibilidade precisa. Combinando potência e praticidade, o Golf GTI é um favorito entre entusiastas de carros esportivos.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
@@ -977,7 +1011,7 @@
 
             <!-- CIVIC -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -993,15 +1027,16 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Civic
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                O Honda Civic é um sedan compacto conhecido por sua confiabilidade e eficiência. Com um design moderno e tecnologia avançada, o Civic é uma escolha popular para quem busca um carro prático e econômico.
+            <p class="mb-4 text-base text-black dark:text-white">
+              O Honda Civic é um sedan compacto conhecido por sua confiabilidade e eficiência. Com um design moderno e tecnologia avançada, o Civic é uma escolha popular para quem busca um carro prático e econômico.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
@@ -1010,7 +1045,7 @@
 
             <!-- COROLLA -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -1026,24 +1061,26 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Corolla
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                O Toyota Corolla é um sedan confiável e econômico, conhecido por sua durabilidade e conforto. Com uma reputação sólida e tecnologia moderna, o Corolla é uma escolha popular em todo o mundo.
+            <p class="mb-4 text-base text-black dark:text-white">
+              O Toyota Corolla é um sedan confiável e econômico, conhecido por sua durabilidade e conforto. Com uma reputação sólida e tecnologia moderna, o Corolla é uma escolha popular em todo o mundo.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
             </div>
             </div>
 
+
             <!-- MUSTANG -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -1059,24 +1096,25 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Mustang
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                O Ford Mustang é um ícone dos carros esportivos americanos, famoso por seu design clássico e desempenho potente. Com uma herança de velocidade e estilo, o Mustang é um símbolo de liberdade na estrada.
+            <p class="mb-4 text-base text-black dark:text-white">
+              O Ford Mustang é um ícone dos carros esportivos americanos, famoso por seu design clássico e desempenho potente. Com uma herança de velocidade e estilo, o Mustang é um símbolo de liberdade na estrada.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
             </div>
             </div>
-
+          
             <!-- MERCEDES -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -1092,24 +1130,25 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Mercedes
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                A Mercedes-Benz é uma marca de carros de luxo conhecida por seu design elegante e inovação tecnológica. Com uma história de excelência e prestígio, os veículos da Mercedes são símbolos de status e sofisticação.
-            </p>
+            <p class="mb-4 text-base text-black dark:text-white">
+              A Mercedes-Benz é uma marca de carros de luxo conhecida por seu design elegante e inovação tecnológica. Com uma história de excelência e prestígio, os veículos da Mercedes são símbolos de status e sofisticação.
+                        </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
             </div>
             </div>
-
+           
             <!-- ASTRA -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -1125,15 +1164,16 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Astra
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                O Opel Astra é um hatchback popular conhecido por seu design moderno e eficiência. Com tecnologia avançada e conforto, o Astra é uma escolha comum para motoristas urbanos.
+            <p class="mb-4 text-base text-black dark:text-white">
+              O Opel Astra é um hatchback popular conhecido por seu design moderno e eficiência. Com tecnologia avançada e conforto, o Astra é uma escolha comum para motoristas urbanos.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
@@ -1142,7 +1182,7 @@
 
             <!-- CORSA -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -1158,15 +1198,16 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Corsa
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                O Opel Corsa é um hatchback compacto conhecido por sua agilidade e economia de combustível. Com um design moderno e versatilidade, o Corsa é uma escolha popular para quem busca praticidade na cidade.
+            <p class="mb-4 text-base text-black dark:text-white">
+              O Opel Corsa é um hatchback compacto conhecido por sua agilidade e economia de combustível. Com um design moderno e versatilidade, o Corsa é uma escolha popular para quem busca praticidade na cidade.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
@@ -1175,7 +1216,7 @@
 
             <!-- CLIO -->
             <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
             data-te-ripple-init
@@ -1191,57 +1232,63 @@
             </div>
             <div class="p-6">
             <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
+                class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
                 Clio
             </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                O Renault Clio é um hatchback compacto conhecido por seu estilo moderno e eficiência energética. Com um interior bem projetado e boa dirigibilidade, o Clio é uma escolha popular para motoristas urbanos.
+            <p class="mb-4 text-base text-black dark:text-white">
+              O Renault Clio é um hatchback compacto conhecido por seu estilo moderno e eficiência energética. Com um interior bem projetado e boa dirigibilidade, o Clio é uma escolha popular para motoristas urbanos.
             </p>
             <button
                 type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
+                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                data-te-ripple-init
                 data-te-ripple-color="light">
                 Comprar
             </button>
             </div>
             </div>
 
-            <!-- FOCUS -->
-            <div
-            class="block rounded-lg bg-gray-900 dark:bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-            <div
-            class="relative overflow-hidden bg-cover bg-no-repeat"
-            data-te-ripple-init
-            data-te-ripple-color="light">
-            <img
-                class="rounded-t-lg"
-                src="/img/focus-card.jpg"
-                alt="" />
-            <a href="#!">
-                <div
-                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-            </a>
-            </div>
-            <div class="p-6">
-            <h5
-                class="mb-2 text-xl font-medium leading-tight text-white dark:text-black">
-                Focus
-            </h5>
-            <p class="mb-4 text-base text-white dark:text-black">
-                O Ford Focus é um hatchback ou sedan compacto conhecido por seu desempenho ágil e tecnologia avançada. Com um design elegante e opções de motorização eficiente, o Focus é uma escolha popular para quem busca um carro prático e divertido de dirigir.
+             <!-- FOCUS -->
+             <div
+             class="block rounded-lg bg-gray-200 dark:bg-zinc-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+             <div
+             class="relative overflow-hidden bg-cover bg-no-repeat"
+             data-te-ripple-init
+             data-te-ripple-color="light">
+             <img
+                 class="rounded-t-lg"
+                 src="/img/focus-card.jpg"
+                 alt="" />
+             <a href="#!">
+                 <div
+                 class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+             </a>
+             </div>
+             <div class="p-6">
+             <h5
+                 class="mb-2 text-xl font-medium leading-tight text-black dark:text-white">
+                 Focus
+             </h5>
+             <p class="mb-4 text-base text-black dark:text-white">
+              O Ford Focus é um hatchback ou sedan compacto conhecido por seu desempenho ágil e tecnologia avançada. Com um design elegante e opções de motorização eficiente, o Focus é uma escolha popular para quem busca um carro prático e divertido de dirigir.
             </p>
-            <button
-                type="button"
-                class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"                data-te-ripple-init
-                data-te-ripple-color="light">
-                Comprar
-            </button>
-            </div>
-            </div>  
+             <button
+                 type="button"
+                 class="w-full inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.88)] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:bg-red-600 focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:shadow-[0_4px_9px_-4px_rgba(255, 0, 0, 0.73)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)] dark:active:shadow-[0_8px_9px_-4px_rgba(255, 0, 0, 0.73),0_4px_18px_0_rgba(255, 0, 0, 0.73)]"
+                 data-te-ripple-init
+                 data-te-ripple-color="light">
+                 Comprar
+             </button>
+             </div>
+             </div> 
         </div>
     </main>
   </body>
-    <script src="./public/script.js"></script>
+    <script src="./src/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/998c60ef77.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </html>
